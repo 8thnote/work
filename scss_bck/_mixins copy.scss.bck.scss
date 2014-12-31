@@ -28,9 +28,3 @@
 		clear: both;
 	} //after
 } //clearfix
-
-@mixin verticalCenter {
-	@include display-flex();
-	@include align-items(center);
-	@include justify-content(center);
-}

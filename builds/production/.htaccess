@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !tulsawebdesigners.biz$ [NC]
+RewriteRule ^(.*)$ http://tulsawebdesigners.biz/$1 [L,R=301]
+
+RewriteCond %{REMOTE_ADDR} !=192.168.1.6
+RewriteCond %{REQUEST_URI} !^/under-construction/
+# Rewrites all URLS [Replace "domain" with the actual domain, without the TLD (.com, .net, .biz, etc)]
+RewriteCond %{HTTP_HOST} ^(www\.)?tulsawebdesigners\.
+# Rewrite all those to insert /folder
+RewriteRule ^(.*)$ /under-construction/$1 [L]

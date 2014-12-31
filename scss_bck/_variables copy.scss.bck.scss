@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Exo+2:200);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,700italic);
 
 @include border-box-sizing; //uses border box sizing like the old IE
 
@@ -34,7 +34,7 @@ $navBrandBg			: $red;
 $headersubbg		: $dark;
 
 //Font variables
-$fontFamily 		: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fontFamily 		: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $thin		: 200;
 $normal		: 400;
